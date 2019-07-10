@@ -1,0 +1,13 @@
+com\auditservice\dao\repository\AuditLogRepository.class
+com\auditservice\config\ActiveMqConnectionFactoryConfig.class
+com\auditservice\listener\EventListener.class
+com\auditservice\converter\LocalDateTimeConverter.class
+com\auditservice\processor\EventProcessor$1.class
+com\auditservice\model\AuditLogEntity.class
+com\auditservice\model\EventDetailsEntity.class
+com\auditservice\converter\XmlToEvent.class
+com\auditservice\converter\LocalDateTimeAdapter.class
+com\auditservice\processor\EventProcessor.class
+com\auditservice\main\AuditServiceApplicationStarter.class
+com\auditservice\dao\repository\EventDetailsRepository.class
+com\auditservice\model\Event.class

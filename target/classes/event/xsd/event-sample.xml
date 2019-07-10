@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<event>
+	<userid>Sumit2</userid>
+	<systemid>login-service</systemid>
+	<name>login</name>
+	<eventdatetime>2001-07-02T12:08:56.235-0700</eventdatetime>
+	<additionalinfo>Reminder</additionalinfo>
+	<status>successful</status>
+	<createdby>login-service</createdby>
+	<createddatetime>2001-07-04T12:08:56.235-0700</createddatetime>
+</event>
