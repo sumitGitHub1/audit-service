@@ -9,7 +9,9 @@ import javax.xml.bind.Unmarshaller;
 
 import org.springframework.stereotype.Component;
 
-import com.auditservice.model.Event;
+import com.auditservice.jaxb.Event;
+
+
 
 @Component
 public class XmlToEvent {	 

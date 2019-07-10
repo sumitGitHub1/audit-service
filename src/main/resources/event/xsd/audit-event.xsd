@@ -2,14 +2,14 @@
   <xs:element name="event">
     <xs:complexType>
       <xs:sequence>
-        <xs:element type="xs:string" name="userid"/>
-        <xs:element type="xs:string" name="systemid"/>
-        <xs:element type="xs:string" name="name" minOccurs="1"/>
+        <xs:element type="xs:string" name="userid"  minOccurs="0"/>
+        <xs:element type="xs:string" name="systemid"  minOccurs="0"/>
+        <xs:element type="xs:string" name="name" minOccurs="0"/>
         <xs:element type="xs:dateTime" name="eventdatetime" minOccurs="1"/>
-        <xs:element type="xs:string" name="additionalinfo"/>
-        <xs:element type="xs:string" name="status"/>
-        <xs:element type="xs:string" name="createdby"/>
-        <xs:element type="xs:dateTime" name="createddatetime"/>
+        <xs:element type="xs:string" name="additionalinfo"  minOccurs="0"/>
+        <xs:element type="xs:string" name="status" minOccurs="0"/>
+        <xs:element type="xs:string" name="createdby" minOccurs="0" />
+        <xs:element type="xs:dateTime" name="createddatetime" minOccurs="0" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

@@ -12,7 +12,7 @@ import org.springframework.jms.annotation.JmsListener;
 import org.springframework.stereotype.Component;
 
 import com.auditservice.converter.XmlToEvent;
-import com.auditservice.model.Event;
+import com.auditservice.jaxb.Event;
 import com.auditservice.processor.EventProcessor;
 
 @Component

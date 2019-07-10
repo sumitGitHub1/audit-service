@@ -1,7 +1,5 @@
 package com.auditservice.processor;
 
-import java.time.LocalDateTime;
-import java.time.ZoneId;
 import java.util.function.Function;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,8 +7,8 @@ import org.springframework.stereotype.Component;
 
 import com.auditservice.dao.repository.AuditLogRepository;
 import com.auditservice.dao.repository.EventDetailsRepository;
+import com.auditservice.jaxb.Event;
 import com.auditservice.model.AuditLogEntity;
-import com.auditservice.model.Event;
 import com.auditservice.model.EventDetailsEntity;
 
 @Component
@@ -27,18 +25,18 @@ public class EventProcessor {
 		public AuditLogEntity apply(Event t) {
 			AuditLogEntity entity = new AuditLogEntity();
  
-			entity.setUserId(t.getUserId());
-			entity.setSystemId(t.getSystemId());
+			entity.setUserId(t.getUserid());
+			entity.setSystemId(t.getSystemid());
 
 			EventDetailsEntity ed = getIdByEvent(t.getName());
 			entity.setEventId(ed.getId());
 
-			entity.setEventParameters(t.getAdditionalInfo());
+			entity.setEventParameters(t.getAdditionalinfo());
 			entity.setStatus(t.getStatus());
 
-			entity.setEventDateTime(t.getEventDateTime());
-			entity.setCreatedBy(t.getCreatedBy());
-			entity.setCreatedDateTime(t.getCreatedDateTime());
+			entity.setEventDateTime(t.getEventdatetime());
+			entity.setCreatedBy(t.getCreatedby());
+			entity.setCreatedDateTime(t.getCreateddatetime());
 			return entity;
 		}
 
